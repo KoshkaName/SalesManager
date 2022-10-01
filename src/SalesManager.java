@@ -14,7 +14,6 @@ public class SalesManager {
         }
         return max;
     }
-
     public long min() {
         long min = -1;
         for (long sale : sales) {
@@ -30,6 +29,6 @@ public class SalesManager {
         for (long sale : sales) {
             sum += sale;
         }
-        return (sum - min() - max()) / (sales.length -2);
+        return (sum - min() - max()) / (sales.length - 2);
     }
 }
