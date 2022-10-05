@@ -25,18 +25,13 @@ public class SalesManager {
         return min;
     }
 
-
     public long stat() {
         long sum = 0;
         for (long sale : sales) {
-
-            public long stat() {
-                long sum = 0;
-                for (long sale : sales) {
-                    sum += sale;
-                }
-                sum = (sum - max() - min()) / (sales.length - 2);
-                return sum;
-            }
+            sum += sale;
         }
+        sum = (sum - max() - min()) / (sales.length - 2);
+        return sum;
+    }
+}
 
