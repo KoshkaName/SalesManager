@@ -28,12 +28,10 @@ public class SalesManager {
     public int stat() {
         int sum = 0;
         for (int sale : sales) {
-            if (sale != max() && sale != min()) {
-                sum += sale;
-
-            }
+            sum += sale;
         }
         sum = (sum - max() - min()) / (sales.length - 2);
         return sum;
     }
 }
+
